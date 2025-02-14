@@ -1,0 +1,146 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: inter;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+nav{
+    
+}
+ul img{
+  margin-left: 200px;
+}
+ul{
+    display: grid;
+    grid-template-columns: 700px 100px 100px 100px 100px 100px;
+    list-style: none;
+    height: 10vh;
+  
+    margin: 40px 50px;
+   
+}
+li{
+    margin: 10px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+  margin: -50px 250px 600px 250px;
+
+}
+.container img{
+    width:100%;
+    
+}
+.card3{
+  grid-column: 1/span 2;
+    grid-row: 1/span 1;
+    background-color: #333;
+   margin: 20px;
+   animation: slideIn 2s ease-in-out;
+    
+}
+.card4{
+    
+    grid-row: 1/span 2;
+    background-color: hsl(240, 100%, 5%);
+    color: white;
+    margin: 20px;
+    height: 460px;
+    animation: bounce 2s ease-in-out;
+}
+.card1,.card2,.card5,.card6{
+    height: 150px;
+/* background-color: #333; */
+    margin: 20px;
+    animation: fadeIn 2s ease-in-out;
+   
+}
+.card5,.card6,.card7{
+    margin-top: -100px;
+    display: flex;
+    animation: rotate 2s ease-in-out;
+}
+.card1{
+       width: 200px;
+   
+}
+.card2{ }
+
+
+.card5{
+    
+}
+.card6{
+
+}
+
+.card7{}
+
+.container p{
+    width: 150px;
+    font-size: 12px; 
+    margin: 10px 0 0 15px;
+}
+
+.container button{
+    width: 150px;
+    height: 30px;
+    border: none;
+    background-color: hsl(5, 85%, 63%);
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.word h2 {
+    margin: 0px 0 0 15px;
+    color: hsl(5, 85%, 63%);
+}
+.word h3{
+    margin: 0px 0 0 15px;
+}
+.card4 h2{
+    color: hsl(35, 77%, 62%);
+    margin: 20px;
+}
+.card4 p{
+    width: 250px;
+    margin: 20px;
+    color: rgb(191, 191, 189);
+}
+.card4 h3{
+    color: white;
+    margin: 20px 0 0 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-30px); }
+    60% { transform: translateY(-15px); }
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
